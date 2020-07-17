@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Игаев](https://up.htmlacademy.ru/adaptive/20/user/1156881).
-* Наставник: `Неизвестно`.
+* Наставник: [Серёжа Попов](https://htmlacademy.ru/profile/id42761).
 
 ---
 
