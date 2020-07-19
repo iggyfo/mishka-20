@@ -37,22 +37,22 @@
           </li>
         </ul>
       </section> <!-- end .menu -->
-      <div class="items items--week-hit">
-        <h3 class="items__title">Вязаные корзинки</h3>
-        <p class="items__hit">Товар недели</p>
-        <p class="items__text">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и трех рахмерах</p>
-        <dt class="items__list">
-          <dt class="items__description">Цвет:</dt>
-          <dd class="items__details">&quot;Тиффани&quot;/серый</dd>
-          <dt class="items__description">Диаметр:</dt>
-          <dd class="items__details">25 см</dd>
-          <dt class="items__description">Высота:</dt>
-          <dd class="items__details">15 см</dd>
+      <div class="item item--week-hit">
+        <h3 class="item__title">Вязаные корзинки</h3>
+        <p class="item__hit">Товар недели</p>
+        <p class="item__text">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и трех рахмерах</p>
+        <dt class="item__list">
+          <dt class="item__description">Цвет:</dt>
+          <dd class="item__details">&quot;Тиффани&quot;/серый</dd>
+          <dt class="item__description">Диаметр:</dt>
+          <dd class="item__details">25 см</dd>
+          <dt class="item__description">Высота:</dt>
+          <dd class="item__details">15 см</dd>
         </dt>
-        <img class="items__img" src="https://via.placeholder.com/150x150" width="150" height="150">
-        <p class="items__price">Цена: 990 руб.</p>
+        <img class="item__img" src="https://via.placeholder.com/150x150" width="150" height="150">
+        <p class="item__price">Цена: 990 руб.</p>
         <a href="#" class="button">Заказать</a>
-      </div> <!-- end .items -->
+      </div> <!-- end .item -->
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
@@ -95,13 +95,38 @@
       </div> <!-- end .reviews -->
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__row">
+          <div class="contacts__col">e-mail:</div>
+          <div class="contacts__col">info@mimimishkashop.ru</div>
+        </div> <!-- end .contacts__row -->
+        <div class="contacts__row">
+          <div class="contacts__col">адрес:</div>
+          <div class="contacts__col">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+        </div> <!-- end .contacts__row -->
+        <div class="map">
+          <!-- блок для карты -->
+        </div>
+        <a href="#" class="button">Напишите нам</a>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__social">
+        <ul class="social">
+          <li class="social__list"><a href="#" class="social__link">Instagram</a></li>
+          <li class="social__list"><a href="#" class="social__link">Facebook</a></li>
+          <li class="social__list"><a href="#" class="social__link">Twitter</a></li>
+        </ul>
+      </div> <!-- end .footer__social -->
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <!-- svg -->
+      </div>
+    </footer>
   </body>
 </html>
 
 <!-- Вопросы -->
 <!--
-  1. Характеристики товара и контакты делать dt? Посмотрев несколько сайтов с техникой обнаружил там таблицы
-
+  1. Характеристики товара и контакты делать dt или flex? Посмотрев несколько сайтов с техникой обнаружил там таблицы
+  2. Стоит ли применять миксы для задания позиции блоков? или позиционирование делать в нутри css блоков?
  -->
