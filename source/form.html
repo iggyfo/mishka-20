@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Картинка">
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Каталог товаров</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Вязание на заказ</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Поиск по сайту</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="main__title">Вязание на&nbsp;заказ</h1>
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Тип</legend>
+          <input class="visually-hidden" type="radio" id="accessories" name="items-type">
+          <label class="form__label" for="accessories">Аксессуар для интерьера</label>
+          <input class="visually-hidden" type="radio" id="toy" name="items-type">
+          <label class="form__label" for="accessories">Детская&nbsp;игрушка</label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Цвет</legend>
+          <input class="visually-hidden" type="checkbox" id="white" name="items-color-white">
+          <label class="form__label" for="white">Белый</label>
+          <input class="visually-hidden" type="checkbox" id="grey" name="items-color-grey">
+          <label class="form__label" for="grey">Серый</label>
+          <input class="visually-hidden" type="checkbox" id="tiffany" name="items-color-tiffany">
+          <label class="form__label" for="tiffany">&laquo;Тиффани&raquo;</label>
+          <input class="visually-hidden" type="checkbox" id="black" name="items-color-black">
+          <label class="form__label" for="black">Черный</label>
+          <input class="visually-hidden" type="checkbox" id="pink" name="items-color-pink">
+          <label class="form__label" for="pink">Розовый</label>
+          <input class="visually-hidden" type="checkbox" id="orange" name="items-color-orange">
+          <label class="form__label" for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">ФИО</legend>
+          <!-- Продолжение формы -->
+        </fieldset>
+        <div class="form__fieldset">
+          <legend class="form__legend">Тел</legend>
+          <!-- Продолжение формы -->
+        </div>
+        <div class="form__fieldset">
+          <legend class="form__legend">e-mail</legend>
+          <!-- Продолжение формы -->
+        </div>
+        <div class="form__fieldset">
+          <legend class="form__legend">Доп</legend>
+          <!-- Продолжение формы -->
+        </div>
+        <button class="button" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__social">
+        <ul class="social">
+          <li class="social__list"><a href="#" class="social__link">Instagram</a></li>
+          <li class="social__list"><a href="#" class="social__link">Facebook</a></li>
+          <li class="social__list"><a href="#" class="social__link">Twitter</a></li>
+        </ul>
+      </div> <!-- end .footer__social -->
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <!-- svg -->
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- Вопросы -->
+<!--
+
+ -->
