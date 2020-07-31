@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-header-bgcolor;
+}
+
+.footer__social {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 27px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    width: 100%;
+    height: 1px;
+    background-color: $footer-border-bg;
+  }
+}
+
+.footer__copyright {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 27px;
+}

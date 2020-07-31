@@ -1,0 +1,34 @@
+.reviews {
+  padding-top: 28px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 15px;
+  line-height: 30px;
+  color: $good-text-color;
+}
+
+.reviews__author {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+
+  &-social {
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: $good-text-color;
+  }
+}
