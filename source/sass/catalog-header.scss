@@ -1,0 +1,15 @@
+.catalog-header {
+  width: 100%;
+  min-height: 177px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-header-bgcolor;
+}
+
+.catalog-header__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}

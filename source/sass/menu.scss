@@ -1,0 +1,23 @@
+.menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.menu__item {
+  justify-content: start;
+}
+
+.menu__link {
+  padding-left: 46px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-text-color;
+}
