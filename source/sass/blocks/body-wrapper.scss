@@ -1,0 +1,8 @@
+.body-wrapper {
+  min-width: $mobile-width;
+  background-color: $features-color;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+}

@@ -2,7 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 30px;
   background-color: $main-header-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    flex-grow: 1;
+  }
 }
 
 .footer__social {
@@ -19,10 +34,18 @@
     height: 1px;
     background-color: $footer-border-bg;
   }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    flex-grow: 1;
+  }
 }
 
 .footer__copyright {
-  width: 100%;
   margin-top: 25px;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }

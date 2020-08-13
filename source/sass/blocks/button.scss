@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 16px 70px;
+  border: 2px solid $good-text-color;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $good-text-color;
+  text-align: center;
+  cursor: pointer;
+
+  &--contacts {
+    padding: 16px 38px;
+  }
+
+  &--video {
+    padding: 18px 11px;
+    margin: 0 34px;
+  }
+}

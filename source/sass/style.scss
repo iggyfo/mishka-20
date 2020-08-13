@@ -1,97 +1,29 @@
-// Начните писать стили здесь
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
+//Global styles
+@import "fonts.scss";
 @import "variables.scss";
-
-//Глобальные стили
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Open Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  background-color: grey;
-  color: $basic-text-color;
-}
-
-.body-wrapper {
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-  background-color: white;
-}
-
-.container {
-  padding: 0 30px;
-}
-
-.button {
-  display: block;
-  box-sizing: border-box;
-  padding: 16px 70px;
-  border: 2px solid $good-text-color;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $good-text-color;
-  text-align: center;
-  cursor: pointer;
-
-  &--contacts {
-    padding: 16px 38px;
-  }
-
-  &--video {
-    padding: 18px 11px;
-    margin: 0 34px;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: none;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "./blocks/body.scss";
+@import "./blocks/body-wrapper.scss";
+@import "./blocks/button.scss";
 
 //index.html
-@import "menu-item.scss";
-@import "menu.scss";
-@import "menu-button.scss";
-@import "main-header.scss";
-@import "features.scss";
-@import "good.scss";
-@import "about.scss";
-@import "reviews.scss";
-@import "controls.scss";
-@import "contacts.scss";
-@import "map.scss";
-@import "footer.scss";
-@import "social.scss";
-@import "copyright.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/nav-button.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/features.scss";
+@import "./blocks/good.scss";
+@import "./blocks/about.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/controls.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
 
 //catalog.html
-@import "catalog.scss";
-@import "catalog-header.scss";
-@import "catalog-good.scss";
-@import "video.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-header.scss";
+@import "./blocks/catalog-good.scss";
+@import "./blocks/video.scss";
