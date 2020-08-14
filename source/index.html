@@ -39,26 +39,32 @@
           </button>
           <ul class="nav__main">
             <li class="nav__item nav__item--catalog">
-              <a href="./catalog.html" class="nav__link">Каталог товаров</a>
+              <a class="nav__link" href="./catalog.html">Каталог товаров</a>
             </li>
             <li class="nav__item nav__item--handmade">
-              <a href="#" class="nav__link">Вязание на заказ</a>
+              <a class="nav__link" href="./form.html">Вязание на заказ</a>
             </li>
             <li class="nav__item nav__item--new">
-              <a href="#" class="nav__link">Новые поступления</a>
+              <a class="nav__link" href="#">Новые поступления</a>
             </li>
             <li class="nav__item nav__item--sale">
-              <a href="#" class="nav__link">Распродажа</a>
+              <a class="nav__link" href="#">Распродажа</a>
             </li>
           </ul> <!-- end .nav__main -->
           <ul class="nav__user">
             <li class="nav__item nav__item--find">
-              <a href="#" class="nav__link">Поиск по сайту</a>
+              <a href="#" class="nav__link">
+                <svg class="nav__link--icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                  <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                </svg>
+                <span class="nav__link--text">Поиск по сайту</span>
+              </a>
             </li>
             <li class="nav__item nav__item--cart">
               <a href="#" class="nav__link">Корзина: пока пуста</a>
             </li>
           </ul> <!-- end .nav__user -->
+          <p class="nav__shares">Бесплатная доставка по России</p>
         </nav>
       </header>
       <main class="main">
@@ -168,35 +174,37 @@
               </li>
             </div> <!-- end .about__column -->
           </ul>
-          <div class="reviews">
-            <h2 class="reviews__title">Отзывы</h2>
-            <p class="reviews__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стилтными, а&nbsp;также набирают больше лайков!</p>
-            <p class="reviews__author">Анастасия Красильникова</p>
-            <a class="reviews__author-social" href="#">@misssssiskras</a>
-            <div class="controls">
-              <a class="controls__btn" href="#">
-                <svg class="controls__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                  <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
-                </svg>
-              </a>
-              <a class="controls__btn controls__btn--next" href="#">
-                <svg class="controls__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                  <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
-                </svg>
-              </a>
-            </div> <!-- end .controls -->
-            <a href="#" class="button">Написать</a>
-          </div> <!-- end .reviews -->
+          <div class="reviews__wrapper">
+            <div class="reviews">
+              <h2 class="reviews__title">Отзывы</h2>
+              <p class="reviews__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не набирали и&nbsp;близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стилтными, а&nbsp;также набирают больше лайков!</p>
+              <div class="reviews__author">
+                <p class="reviews__author-name">Анастасия Красильникова</p>
+                <a class="reviews__author-social" href="#">@misssssiskras</a>
+              </div>
+              <div class="controls">
+                <a class="controls__btn" href="#">
+                  <svg class="controls__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                    <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+                  </svg>
+                </a>
+                <a class="controls__btn controls__btn--next" href="#">
+                  <svg class="controls__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                    <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+                  </svg>
+                </a>
+              </div> <!-- end .controls -->
+              <a href="#" class="button button--reviews">Написать</a>
+            </div> <!-- end .reviews -->
+          </div> <!-- end .reviews__wrapper -->
         </section> <!-- end .about -->
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__row">
-            <div class="contacts__col1">e-mail:</div>
-            <div class="contacts__col2"><a href="mailto:info@mimimishkashop.ru" class="contacts__email">info@mimimishkashop.ru</a></div>
-          </div> <!-- end .contacts__row -->
-          <div class="contacts__row">
-            <div class="contacts__col1">адрес:</div>
-            <div class="contacts__col2">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+          <dl class="contacts__list">
+            <dd class="contacts__description">e-mail:</dd>
+            <dt class="contacts__details"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dt>
+            <dd class="contacts__description">адрес:</dd>
+            <dt class="contacts__details">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</dt>
           </div> <!-- end .contacts__row -->
           <div class="map">
             <svg class="map__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66px" height="100.801px" viewBox="0 0 66 100.801" enable-background="new 0 0 66 100.801" xml:space="preserve">
@@ -275,8 +283,4 @@
 </html>
 <!--
   Вопросы:
-  1. Уместен ли бр в main-header__title?
-  2. Например у меня есть общий класс для всех кнопок .button и он вынесен в фаил style.scss. Если я добавляю модификатор к кнопке .button--contacts я его пишу там где определил .button (в style.scss) или в .contacts.scss?
-  3. В .map использую отрицательные марджины, это вообще законно? или вынести карту из .contacts?
-  4. Не смог использовать свг лого академии которое дала академия, даже при задании ширины и высоты свг выглдит не корректно, взял из фигмы.
  -->

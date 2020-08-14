@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    flex-grow: 1;
+    width: 35%;
   }
 }
 
@@ -36,8 +36,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    flex-grow: 1;
+    width: 30%;
   }
 }
 
@@ -46,6 +45,6 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
+    width: 35%;
   }
 }

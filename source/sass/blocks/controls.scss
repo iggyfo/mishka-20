@@ -3,22 +3,27 @@
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 38px;
-  border: 1px solid $menu-bottom-color;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    width: 1px;
-    background-color: $menu-bottom-color;
+  @media (min-width: $tablet-width) {
+    width: 26%;
+    order: 4;
+    font-size: 18px;
   }
 }
 
 .controls__btn {
-  padding: 13px 42px 13px 38px;
+  width: 50%;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $menu-bottom-color;
 
   &--next {
-    padding: 13px 42px 13px 37px;
+    border-left: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }

@@ -13,11 +13,31 @@
   cursor: pointer;
 
   &--contacts {
+    margin: 40px 30px;
     padding: 16px 38px;
+
+    @media (min-width: $tablet-width) {
+      width: 30%;
+      margin: 56px auto;
+    }
+  }
+
+  &--reviews {
+    @media (min-width: $tablet-width) {
+      width: 26%;
+      padding: 15px 0;
+      margin-bottom: 38px;
+      order: 1;
+    }
   }
 
   &--video {
     padding: 18px 11px;
     margin: 0 34px;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+      margin: 0 6%;
+    }
   }
 }

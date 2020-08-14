@@ -1,7 +1,11 @@
 .catalog {
   padding: 30px;
   display: grid;
-  grid-template-columns: 260px;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 50px 53px 50px;
+  }
 }

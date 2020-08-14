@@ -44,9 +44,7 @@
 
 .about__column {
   @media (min-width: $tablet-width) {
-    &:first-child {
-      margin-right: 65px;
-    }
+    width: 50%;
   }
 }
 
