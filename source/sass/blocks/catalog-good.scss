@@ -20,15 +20,15 @@
 
   @media (min-width: $mobile-width) {
     &--hare {
-      background-image: url("../../img/photo-hare-mobile@1x.jpg");
+      background-image: url("../img/photo-hare-mobile@1x.jpg");
     }
 
     &--bowl {
-      background-image: url("../../img/photo-bowl-mobile@1x.jpg");
+      background-image: url("../img/photo-bowl-mobile@1x.jpg");
     }
 
     &--toys {
-      background-image: url("../../img/photo-toys-mobile@1x.jpg");
+      background-image: url("../img/photo-toys-mobile@1x.jpg");
     }
   }
 
@@ -37,15 +37,15 @@
     min-height: 334px;
 
     &--hare {
-      background-image: url("../../img/photo-hare-tablet@1x.jpg");
+      background-image: url("../img/photo-hare-tablet@1x.jpg");
     }
 
     &--bowl {
-      background-image: url("../../img/photo-bowl-tablet@1x.jpg");
+      background-image: url("../img/photo-bowl-tablet@1x.jpg");
     }
 
     &--toys {
-      background-image: url("../../img/photo-toys-tablet@1x.jpg");
+      background-image: url("../img/photo-toys-tablet@1x.jpg");
     }
   }
 
@@ -54,15 +54,15 @@
     min-height: 462px;
 
     &--hare {
-      background-image: url("../../img/photo-hare-desktop@1x.jpg");
+      background-image: url("../img/photo-hare-desktop@1x.jpg");
     }
 
     &--bowl {
-      background-image: url("../../img/photo-bowl-desktop@1x.jpg");
+      background-image: url("../img/photo-bowl-desktop@1x.jpg");
     }
 
     &--toys {
-      background-image: url("../../img/photo-toys-desktop@1x.jpg");
+      background-image: url("../img/photo-toys-desktop@1x.jpg");
     }
   }
 }

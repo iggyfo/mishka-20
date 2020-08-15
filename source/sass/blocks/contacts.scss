@@ -39,6 +39,10 @@
 }
 
 .contacts__icon {
+  @media (max-width: $mobile-only-width) {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 2 / -1;
     justify-self: end;
