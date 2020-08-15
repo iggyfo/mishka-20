@@ -2,10 +2,15 @@
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
   grid-row-gap: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 57px 50px 53px 50px;
+    padding: 67px 50px 53px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 51px;
+    padding-top: 111px;
   }
 }

@@ -5,4 +5,9 @@
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }

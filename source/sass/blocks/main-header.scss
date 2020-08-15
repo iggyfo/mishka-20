@@ -34,8 +34,14 @@
   color: $main-header-color;
 
   @media (min-width: $tablet-width) {
-    margin: 155px auto 372px auto;
+    margin: 155px auto 355px auto;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 157px auto 372px auto;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

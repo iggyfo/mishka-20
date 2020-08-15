@@ -25,6 +25,12 @@
     flex-wrap: wrap;
     order: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    width: 34.3%;
+    height: 89px;
+  }
 }
 
 .nav__user {
@@ -39,6 +45,12 @@
     flex-wrap: wrap;
     order: 0;
     flex-basis: 52%;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    height: 89px;
+    flex-basis: 36.4%;
   }
 }
 
@@ -94,6 +106,43 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 89px;
+
+    &--new {
+      display: flex;
+      flex-basis: 50%;
+      min-height: 65px;
+
+      .nav__link {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+
+    &--sale {
+      display: flex;
+      flex-basis: 50%;
+      min-height: 65px;
+
+      .nav__link {
+        padding-left: 18.5%;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+
+    &--handmade {
+      border-right: 1px solid $menu-bottom-color;
+
+      .nav__link {
+        padding-left: 18.5%;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 
 .nav__link {
@@ -137,5 +186,10 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    height: 65px;
   }
 }

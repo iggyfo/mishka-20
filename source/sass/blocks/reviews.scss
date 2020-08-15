@@ -10,6 +10,10 @@
     margin-bottom: 18px;
     padding-top: 82px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 16.5%;
+  }
 }
 
 .reviews__wrapper {
@@ -20,6 +24,12 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: 50% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -22.6%;
+    padding-right: 50px;
+    background-size: 29% 100%;
   }
 }
 
@@ -50,6 +60,10 @@
     margin-bottom: 61px;
     order: 2;
     font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
   }
 }
 

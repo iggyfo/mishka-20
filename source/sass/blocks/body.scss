@@ -7,4 +7,9 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: $basic-text-color;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    background-color: $menu-bottom-color;
+  }
 }

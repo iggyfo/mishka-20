@@ -10,4 +10,12 @@
   @media (min-width: $tablet-width) {
     flex-basis: 48%;
   }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    order: 1;
+    flex-basis: 29.2%;
+    height: 89px;
+    text-align: center;
+  }
 }
