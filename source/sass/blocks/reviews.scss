@@ -76,11 +76,12 @@
 
   &-name {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   &-social {
     display: block;
+    font-weight: normal;
     text-decoration: none;
     color: $good-text-color;
   }

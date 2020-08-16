@@ -1,6 +1,7 @@
 //Global styles
 @import "fonts.scss";
 @import "variables.scss";
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/body.scss";
 @import "./blocks/body-wrapper.scss";
 @import "./blocks/button.scss";
@@ -8,7 +9,6 @@
 //index.html
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
-@import "./blocks/nav-button.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/features.scss";
@@ -27,3 +27,6 @@
 @import "./blocks/catalog-header.scss";
 @import "./blocks/catalog-good.scss";
 @import "./blocks/video.scss";
+
+//form.html
+@import "./blocks/form.scss";

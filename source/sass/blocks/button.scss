@@ -13,7 +13,7 @@
   cursor: pointer;
 
   &--contacts {
-    margin: 40px 0;
+    margin: 40px 0 35px 0;
     padding: 16px 0;
 
     @media (min-width: $tablet-width) {
@@ -62,5 +62,10 @@
       grid-row: 5 / 6;
       grid-column: 2 / 3;
     }
+  }
+
+  &--form {
+    padding: 16px 11px;
+    background-color: $features-color;
   }
 }
