@@ -1,0 +1,29 @@
+.controls {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 26%;
+    order: 4;
+    font-size: 18px;
+  }
+}
+
+.controls__btn {
+  width: 50%;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $menu-bottom-color;
+
+  &--next {
+    border-left: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}

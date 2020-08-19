@@ -1,9 +1,19 @@
+.features {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+
 .features__list {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .features__item {
@@ -11,8 +21,13 @@
   min-height: 103px;
   display: flex;
   align-items: center;
+  flex-grow: 1;
   padding: 0 30px;
   background-color: $features-item-bg;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+  }
 }
 
 .features__item--secondary {
@@ -26,6 +41,11 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .features__icon {

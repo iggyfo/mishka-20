@@ -5,6 +5,14 @@
   justify-content: center;
   align-items: center;
   background-color: $main-header-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    min-height: 225px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 255px;
+  }
 }
 
 .catalog-header__title {
@@ -12,4 +20,9 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
