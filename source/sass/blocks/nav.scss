@@ -150,6 +150,10 @@
     &--cart {
       width: 76%;
       justify-content: flex-end;
+
+      .nav__link--text {
+        padding-left: 24px;
+      }
     }
 
     &--catalog {

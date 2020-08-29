@@ -149,6 +149,8 @@
 }
 
 .good__img {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     grid-row: 2/6;
     grid-column: 2/3;

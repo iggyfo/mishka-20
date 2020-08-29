@@ -1,4 +1,5 @@
 .catalog-header {
+  position: relative;
   width: 100%;
   min-height: 177px;
   display: flex;
@@ -7,7 +8,22 @@
   background-color: $main-header-bgcolor;
 
   @media (min-width: $tablet-width) {
-    min-height: 225px;
+    min-height: 237px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: -2px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: $desktop-width) {
+        background-size: cover;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +38,14 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 15px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
