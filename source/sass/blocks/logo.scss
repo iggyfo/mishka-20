@@ -1,14 +1,15 @@
 .logo {
   display: block;
-  padding: 22px 0;
+  padding: 20px 0;
 
-  //Only for mobile-width
+  //Только для мобильной версии
   @media (max-width: $mobile-only-width) {
     align-self: center;
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 48%;
+    width: 47.8%;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

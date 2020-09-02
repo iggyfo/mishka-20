@@ -1,5 +1,13 @@
 .header {
+  //Только для мобильной версии
+  @media (max-width: $mobile-only-width) {
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
     height: 89px;
+    padding: 0 50px;
   }
 }
