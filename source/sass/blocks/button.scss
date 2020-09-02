@@ -13,7 +13,7 @@
   cursor: pointer;
 
   &--contacts {
-    margin: 40px 0;
+    margin: 40px 0 35px 0;
     padding: 16px 0;
 
     @media (min-width: $tablet-width) {
@@ -42,6 +42,7 @@
   &--video {
     padding: 18px 11px;
     margin: 0 34px;
+    margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
       order: 2;
@@ -61,6 +62,22 @@
     @media (min-width: $desktop-width) {
       grid-row: 5 / 6;
       grid-column: 2 / 3;
+    }
+  }
+
+  &--form {
+    padding: 14px 11px;
+    background-color: $features-color;
+
+    @media (min-width: $tablet-width) {
+      padding: 14px 30px;
+      height: fit-content;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 14px 31px;
+      margin: 0 auto;
+      margin-left: 115px;
     }
   }
 }

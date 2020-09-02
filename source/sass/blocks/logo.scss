@@ -1,21 +1,36 @@
 .logo {
   display: block;
-  padding: 22px 0;
+  padding: 20px 0;
 
-  //Only for mobile-width
+  //Только для мобильной версии
   @media (max-width: $mobile-only-width) {
     align-self: center;
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 48%;
+    width: 47.8%;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     order: 1;
-    flex-basis: 29.2%;
+    width: 24%;
+    margin-top: -12px;
     height: 89px;
     text-align: center;
   }
 }
+
+.logo__img {
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 148px;
+    height: 73px;
+  }
+}
+

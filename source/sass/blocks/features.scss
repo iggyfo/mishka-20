@@ -18,14 +18,15 @@
 
 .features__item {
   position: relative;
-  min-height: 103px;
   display: flex;
-  align-items: center;
-  flex-grow: 1;
-  padding: 0 30px;
+  box-sizing: border-box;
+  min-height: 103px;
+  padding: 24px 30px 30px 30px;
   background-color: $features-item-bg;
 
   @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 27px 30px 30px 36px;
     min-height: 119px;
   }
 }
@@ -63,5 +64,17 @@
   &--toy {
     top: 21px;
     right: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--lamp {
+      top: 30px;
+      right: 36px;
+    }
+
+    &--toy {
+      top: 32px;
+      right: 33px;
+    }
   }
 }

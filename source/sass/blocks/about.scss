@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 50px;
+    padding: 0;
     padding-top: 70px;
   }
 
@@ -38,6 +38,7 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 50px;
     margin-bottom: 41px;
     font-size: 43px;
     line-height: 50px;
@@ -50,15 +51,20 @@
 }
 
 .about__list {
-  margin: 0;
-  margin-bottom: 58px;
-  padding: 0;
-  list-style: none;
+  margin-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .about__column {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
   @media (min-width: $tablet-width) {
     width: 50%;
   }
@@ -78,6 +84,7 @@
 
 .about__icon {
   margin-bottom: 17px;
+  height: 37px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
