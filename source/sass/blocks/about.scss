@@ -9,24 +9,29 @@
     bottom: 0;
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: contain;
+    background-repeat: no-repeat;
     height: 6px;
     width: 100%;
-
-    @media (min-width: $desktop-width) {
-      left: -145px;
-      width: 111%;
-    }
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 70px;
+
+    &::after {
+      bottom: -50px;
+      height: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 50px;
     padding-top: 70px;
     margin-left: 16.8%;
+
+    &::after {
+      height: 17px;
+    }
   }
 }
 
@@ -51,7 +56,7 @@
 }
 
 .about__list {
-  margin-bottom: 24px;
+  margin-bottom: 29px;
   display: flex;
   flex-wrap: wrap;
 
@@ -83,15 +88,13 @@
 }
 
 .about__icon {
-  margin-bottom: 17px;
-  height: 37px;
+  margin-bottom: 19px;
+  height: 34px;
+  width: 49px;
+  fill: $features-item-bg;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
-  }
-
-  path {
-    fill: $features-item-bg;
   }
 }
 

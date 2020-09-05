@@ -1,5 +1,5 @@
 .contacts {
-  padding: 38px 30px 0 30px;
+  padding: 41px 30px 0 30px;
   display: grid;
   grid-template-columns: 1fr;
 
@@ -92,6 +92,7 @@
 }
 
 .contacts__details {
+  margin: 0;
   width: 60%;
   margin-bottom: 30px;
 

@@ -4,16 +4,6 @@
   grid-template-columns: 1fr;
   padding: 31px 30px 40px 30px;
 
-  @media (min-width: $tablet-width) {
-    padding: 50px;
-    grid-template-columns: 44% 52%;
-    column-gap: 4%;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 9.5% 29.2% 50%;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -23,6 +13,20 @@
     background-size: cover;
     height: 6px;
     width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    grid-template-columns: 44% 51%;
+    column-gap: 42px;
+
+    &::after {
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 9.5% 29.2% 50%;
   }
 }
 
@@ -87,7 +91,7 @@
   color: $good-text-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 27px;
+    margin-bottom: 47px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -108,7 +112,7 @@
   color: $good-text-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,6 +139,12 @@
 
   @media (min-width: $tablet-width) {
     width: 33%;
+    min-height: 39px;
+    padding: 0;
+
+    &::before {
+      bottom: 6px;
+    }
   }
 }
 
@@ -153,6 +163,15 @@
     height: 1px;
     width: 100%;
     background-color: $menu-bottom-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 39px;
+    padding: 0;
+
+    &::before {
+      bottom: 6px;
+    }
   }
 }
 
