@@ -24,6 +24,24 @@
   padding: 24px 30px 30px 30px;
   background-color: $features-item-bg;
 
+  &:hover {
+    background-color: $left-feature-btn-hover;
+
+    .features__icon {
+      opacity: 0.7;
+      transition: opacity 0.6s;
+    }
+  }
+
+  &:active {
+    background-color: $left-feature-btn-hover;
+
+    .features__icon {
+      opacity: 0.3;
+      transition: opacity 0.6s;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 50%;
     padding: 27px 30px 30px 36px;
@@ -33,6 +51,24 @@
 
 .features__item--secondary {
   background-color: $features-item-secondary-bg;
+
+  &:hover {
+    background-color: $right-feature-btn-hover;
+
+    .features__icon {
+      opacity: 0.7;
+      transition: opacity 0.6s;
+    }
+  }
+
+  &:active {
+    background-color: $left-feature-btn-hover;
+
+    .features__icon {
+      opacity: 0.3;
+      transition: opacity 0.6s;
+    }
+  }
 }
 
 .features__link {
@@ -47,10 +83,15 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
 }
 
 .features__icon {
   position: absolute;
+  opacity: 0.5;
 
   path {
     fill: $features-icon-color;

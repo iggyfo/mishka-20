@@ -28,6 +28,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-top: 8px;
     grid-column: 3 / -1;
     grid-row: 1 / 4;
     background-size: cover;
@@ -44,4 +45,9 @@
   position: absolute;
   top: 32%;
   left: 43%;
+
+  @media (min-width: $tablet-width) {
+    top: 30%;
+    left: 47.3%;
+  }
 }

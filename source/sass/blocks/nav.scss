@@ -75,6 +75,7 @@
     order: 0;
     width: 38%;
     height: 89px;
+    z-index: 2;
   }
 }
 
@@ -93,9 +94,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 33.3%;
     order: 2;
     height: 89px;
-    flex-basis: 36.4%;
   }
 }
 
@@ -129,7 +130,7 @@
     min-height: 89px;
 
     &--find {
-      width: 24%;
+      width: 24.5%;
       justify-content: center;
       border-left: 1px solid $menu-bottom-color;
       border-right: 1px solid $menu-bottom-color;
@@ -140,7 +141,7 @@
     }
 
     &--cart {
-      width: 76%;
+      width: 75.5%;
       justify-content: flex-end;
 
       .nav__link--text {
@@ -181,7 +182,8 @@
     min-height: 89px;
 
     &--catalog {
-      width: 50%;
+      width: 46%;
+      border-right: 1px solid $menu-bottom-color;
 
       .nav__link {
         font-size: 17px;
@@ -191,7 +193,7 @@
     &--new {
       display: flex;
       flex-basis: 50%;
-      min-height: 65px;
+      min-height: 60px;
 
       .nav__link {
         font-size: 15px;
@@ -202,23 +204,31 @@
     &--sale {
       display: flex;
       flex-basis: 50%;
-      min-height: 65px;
+      min-height: 60px;
 
       .nav__link {
-        padding-left: 18.5%;
+        padding-left: 9%;
         font-size: 15px;
         line-height: 24px;
       }
     }
 
     &--handmade {
-      border-right: 1px solid $menu-bottom-color;
+      width: 48%;
 
       .nav__link {
-        padding-left: 20px;
+        padding-left: 35px;
         font-size: 17px;
         line-height: 24px;
       }
+    }
+
+    &--find {
+      width: 24%;
+    }
+
+    &--card {
+      width: 76%;
     }
   }
 }
@@ -229,6 +239,19 @@
   font-size: 17px;
   line-height: 24px;
   color: $basic-text-color;
+  transition: opacity 0.6s;
+
+  &--icon {
+    opacity: 0.2;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   //Только для мобильной версии
   @media (max-width: $mobile-only-width) {
@@ -240,8 +263,6 @@
       left: 9.3%;
       width: 22px;
       height: 22px;
-      text-align: center;
-      opacity: 0.2;
     }
   }
 }
@@ -268,6 +289,6 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    height: 65px;
+    height: 60px;
   }
 }

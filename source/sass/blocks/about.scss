@@ -8,7 +8,7 @@
     left: 0;
     bottom: 0;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 6px;
     width: 100%;
@@ -16,21 +16,24 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 70px;
+    padding-top: 56px;
+    padding-bottom: 68px;
 
     &::after {
-      bottom: -50px;
-      height: 17px;
+      height: 19px;
+      background-size: 100% 19px;
+      background-position-x: -1px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px;
-    padding-top: 70px;
-    margin-left: 16.8%;
+    padding-top: 68px;
+    padding-bottom: 70px;
 
     &::after {
-      height: 17px;
+      left: 50px;
+      height: 23px;
+      background-size: 1050px 21px;
     }
   }
 }
@@ -43,25 +46,31 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
-    margin-bottom: 41px;
+    padding: 0 52px;
+    margin-bottom: 40px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 19.5%;
     font-size: 53px;
     line-height: 57px;
   }
 }
 
 .about__list {
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 19.5%;
+    margin-bottom: 33px;
   }
 }
 
@@ -73,6 +82,10 @@
   @media (min-width: $tablet-width) {
     width: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 38%;
+  }
 }
 
 .about__item {
@@ -83,12 +96,12 @@
   flex-wrap: nowrap;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 }
 
 .about__icon {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   height: 34px;
   width: 49px;
   fill: $features-item-bg;
