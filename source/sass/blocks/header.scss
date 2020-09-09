@@ -2,6 +2,7 @@
   //Только для мобильной версии
   @media (max-width: $mobile-only-width) {
     position: relative;
+    border-bottom: 1px solid $menu-bottom-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -9,5 +10,10 @@
     flex-direction: row;
     height: 89px;
     padding: 0 50px;
+    border-bottom: 1px solid $menu-bottom-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $menu-bottom-color;
   }
 }

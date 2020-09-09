@@ -1,18 +1,20 @@
 .contacts {
-  padding: 38px 30px 0 30px;
+  padding: 41px 30px 0 30px;
   display: grid;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 68px 50px 0 50px;
+    padding: 50px 50px 59px 50px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 12% 31% 1fr;
-    column-gap: 23px;
-    row-gap: 27px;
-    padding-bottom: 105px;
+    grid-template-columns: 11% 31% 51.5%;
+    column-gap: 34px;
+    row-gap: 22px;
+    padding-bottom: 107px;
+    padding-top: 5.5%;
+    padding-left: 6.6%;
   }
 }
 
@@ -34,7 +36,9 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    margin-top: 73px;
+    margin-top: 67px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -46,13 +50,16 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / -1;
     justify-self: end;
+    margin-top: -5px;
+    margin-right: 3px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 1;
     grid-row: 1 / 2;
     justify-self: center;
-    margin-top: 61px;
+    margin-top: 70px;
+    padding-left: 10px;
   }
 }
 
@@ -66,12 +73,16 @@
   color: $good-text-color;
 
   @media (min-width: $tablet-width) {
+    margin-top: 37px;
     grid-column: 1 / -1;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    margin-top: 0;
   }
 }
 
@@ -86,28 +97,58 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 25%;
     margin-bottom: 32px;
   }
 }
 
 .contacts__details {
+  margin: 0;
   width: 60%;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 33.4%;
+    width: 38.4%;
     margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 60%;
-    margin-bottom: 32px;
+    width: 70%;
+    margin-bottom: 0;
   }
 }
 
 .contacts__email {
+  position: relative;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid $email-link-border;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $email-link-border;
+
+    &:hover {
+      background-color: $mail-link-hover;
+      transition: background-color 0.6s;
+    }
+  }
+
+  &:hover {
+    color: $mail-link-hover;
+    transition: color 0.6s;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
+
+    color: $mail-link-hover;
+    transition: color 0.6s;
+  }
 }

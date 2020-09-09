@@ -1,0 +1,25 @@
+.modal-overlay {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: $modal-overlay;
+}
+
+.modal-cart {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal-overlay__form-cart {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

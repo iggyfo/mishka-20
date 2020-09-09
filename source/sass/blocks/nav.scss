@@ -4,23 +4,20 @@
 
   //Только для мобильной версии
   @media (max-width: $mobile-only-width) {
-    //Кнопка открытия меню - Х
     &--close .nav__button {
-      width: 20px;
-      height: 14px;
-      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='19.958px' height='14px' viewBox='0 0 19.958 14' enable-background='new 0 0 19.958 14' xml:space='preserve'%3E%3Crect fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='6' fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='12' fill='%23231F20' width='19.958' height='2'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
+      .nav__button-close {
+        display: none;
+      }
     }
 
     &--close .nav__item {
       display: none;
     }
-    //Кнопка закрытия меню - Х
+
     &--open .nav__button {
-      width: 21px;
-      height: 20px;
-      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20.514px' height='20.512px' viewBox='0 0 20.514 20.512' enable-background='new 0 0 20.514 20.512' xml:space='preserve'%3E%3Cpolygon fill='%23231F20' points='20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 '/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
+      .nav__button-open {
+        display: none;
+      }
     }
 
     //Если js не загрузился скрываем бургер
@@ -29,13 +26,8 @@
     }
 
     //Если js не загрузился открываем меню
-    &--nojs .nav__item {
-      &--catalog,
-      &--handmade,
-      &--find,
-      &--cart {
-        display: flex;
-      }
+    &--nojs .nav__item--menu {
+      display: flex;
     }
   }
 
@@ -81,8 +73,9 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
-    width: 34.3%;
+    width: 38%;
     height: 89px;
+    z-index: 2;
   }
 }
 
@@ -101,9 +94,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 33.3%;
     order: 2;
     height: 89px;
-    flex-basis: 36.4%;
   }
 }
 
@@ -137,7 +130,7 @@
     min-height: 89px;
 
     &--find {
-      width: 24%;
+      width: 24.5%;
       justify-content: center;
       border-left: 1px solid $menu-bottom-color;
       border-right: 1px solid $menu-bottom-color;
@@ -148,7 +141,7 @@
     }
 
     &--cart {
-      width: 76%;
+      width: 75.5%;
       justify-content: flex-end;
 
       .nav__link--text {
@@ -188,10 +181,19 @@
   @media (min-width: $desktop-width) {
     min-height: 89px;
 
+    &--catalog {
+      width: 46%;
+      border-right: 1px solid $menu-bottom-color;
+
+      .nav__link {
+        font-size: 17px;
+      }
+    }
+
     &--new {
       display: flex;
       flex-basis: 50%;
-      min-height: 65px;
+      min-height: 60px;
 
       .nav__link {
         font-size: 15px;
@@ -202,23 +204,31 @@
     &--sale {
       display: flex;
       flex-basis: 50%;
-      min-height: 65px;
+      min-height: 60px;
 
       .nav__link {
-        padding-left: 18.5%;
+        padding-left: 9%;
         font-size: 15px;
         line-height: 24px;
       }
     }
 
     &--handmade {
-      border-right: 1px solid $menu-bottom-color;
+      width: 48%;
 
       .nav__link {
-        padding-left: 18.5%;
-        font-size: 15px;
+        padding-left: 35px;
+        font-size: 17px;
         line-height: 24px;
       }
+    }
+
+    &--find {
+      width: 24%;
+    }
+
+    &--card {
+      width: 76%;
     }
   }
 }
@@ -229,6 +239,31 @@
   font-size: 17px;
   line-height: 24px;
   color: $basic-text-color;
+  transition: opacity 0.6s;
+
+  &--icon {
+    opacity: 0.2;
+  }
+
+  &:hover {
+    opacity: 0.6;
+
+    .nav__link--icon {
+      fill: $features-item-bg;
+      opacity: 1;
+      transition: opacity 0.6s;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .nav__link--icon {
+      fill: $features-item-bg;
+      opacity: 0.3;
+      transition: opacity 0.6s;
+    }
+  }
 
   //Только для мобильной версии
   @media (max-width: $mobile-only-width) {
@@ -239,8 +274,7 @@
       top: 39%;
       left: 9.3%;
       width: 22px;
-      text-align: center;
-      opacity: 0.2;
+      height: 22px;
     }
   }
 }
@@ -267,6 +301,6 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    height: 65px;
+    height: 60px;
   }
 }

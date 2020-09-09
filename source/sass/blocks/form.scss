@@ -41,15 +41,11 @@
 
 .form__fieldset-wrapper {
   .form__fieldset {
-    margin-bottom: 30px;
+    margin-bottom: 7px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
     }
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 }
 
@@ -113,7 +109,7 @@
     }
 
     .form__input {
-      height: 58px;
+      height: 62px;
       margin-bottom: 0;
 
       @media (min-width: $tablet-width) {
@@ -130,6 +126,10 @@
     .form__legend-wrapper {
       margin-bottom: 0;
     }
+  }
+
+  &--email {
+    margin-top: 23px;
   }
 
   &--textarea {
@@ -324,6 +324,20 @@
     @media (min-width: $tablet-width) {
       padding-right: 0;
     }
+
+    &:hover {
+      &::before {
+        background-image: url("../img/icon-radio-off-mobile-hover.svg");
+        transition: background-image 0.6s;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/icon-radio-off-mobile-active.svg");
+        transition: background-image 0.6s;
+      }
+    }
   }
 
   &--checkbox {
@@ -349,41 +363,89 @@
         background-size: 52px 52px;
       }
     }
+
+    &:hover {
+      &::before {
+        background-image: url("../img/icon-checkbox-off-mobile-hover.svg");
+        transition: background-image 0.6s;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/icon-checkbox-off-mobile-active.svg");
+        transition: background-image 0.6s;
+      }
+    }
   }
 }
 
-.form__radio:checked + .form__icon--radio::before {
-  background-image: url("../img/icon-radio-on-mobile.svg");
-  transition: background-image 0.6s;
+.form__radio:checked + .form__icon--radio {
+  &::before {
+    background-image: url("../img/icon-radio-on-mobile.svg");
+    transition: background-image 0.6s;
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/icon-radio-on-mobile-hover.svg");
+      transition: background-image 0.6s;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-image: url("../img/icon-radio-on-mobile-active.svg");
+    }
+  }
 }
 
-.form__checkbox:checked + .form__icon--checkbox::before {
-  background-image: url("../img/icon-checkbox-on-mobile.svg");
-  transition: background-image 0.6s;
+.form__checkbox:checked + .form__icon--checkbox {
+  &::before {
+    background-image: url("../img/icon-checkbox-on-mobile.svg");
+    transition: background-image 0.6s;
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/icon-checkbox-on-mobile-hover.svg");
+      transition: background-image 0.6s;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-image: url("../img/icon-checkbox-on-mobile-active.svg");
+      transition: background-image 0.6s;
+    }
+  }
 }
 
 .form__input {
+  box-sizing: border-box;
   width: 100%;
-  height: 48px;
+  height: 49px;
   border: 0;
   padding: 0;
   border-bottom: 2px solid $basic-text-color;
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 20px;
+  color: $good-text-color;
+
+  &:hover {
+    border-bottom: 2px solid $email-link-border;
+  }
 
   @media (min-width: $tablet-width) {
     width: 65%;
     flex-grow: 1;
     font-size: 19px;
+    padding-left: 17px;
   }
 
   &::placeholder {
     color: $input-color;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 17px;
-    }
   }
 
   &--radio {
@@ -391,45 +453,34 @@
   }
 }
 
+.form__input:hover + .form__tel-icon,
+.form__input:hover + .form__email-icon {
+  fill: $email-link-border;
+}
+
 .form__tel-icon {
   position: absolute;
-  height: 25px;
-  width: 24px;
-  top: 35px;
+  top: 32px;
   right: 8px;
-  background-image: url("../img/icon-phone-mobile.svg");
-  background-repeat: no-repeat;
   z-index: 2;
+  fill: $input-color;
 
   @media (min-width: $tablet-width) {
-    top: 9px;
+    top: 4px;
     right: 27px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 13px;
-    right: 9px;
   }
 }
 
 .form__email-icon {
   position: absolute;
-  height: 21px;
-  width: 32px;
   top: 42px;
   right: 3px;
-  background-image: url("../img/icon-mail-mobile.svg");
-  background-repeat: no-repeat;
   z-index: 2;
+  fill: $input-color;
 
   @media (min-width: $tablet-width) {
-    top: 12px;
+    top: 9px;
     right: 23px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 16px;
-    right: 4px;
   }
 }
 
@@ -444,6 +495,11 @@
 
   &::placeholder {
     color: $textarea-color;
+  }
+
+  &:hover,
+  &:active {
+    border: 2px solid $email-link-border;
   }
 }
 

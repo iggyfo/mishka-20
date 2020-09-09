@@ -14,57 +14,9 @@
 }
 
 .catalog-good__img {
-  min-height: 195px;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-width: $mobile-width) {
-    &--hare {
-      background-image: url("../img/photo-hare-mobile@1x.jpg");
-    }
-
-    &--bowl {
-      background-image: url("../img/photo-bowl-mobile@1x.jpg");
-    }
-
-    &--toys {
-      background-image: url("../img/photo-toys-mobile@1x.jpg");
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-    min-height: 334px;
-
-    &--hare {
-      background-image: url("../img/photo-hare-tablet@1x.jpg");
-    }
-
-    &--bowl {
-      background-image: url("../img/photo-bowl-tablet@1x.jpg");
-    }
-
-    &--toys {
-      background-image: url("../img/photo-toys-tablet@1x.jpg");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    min-height: 462px;
-
-    &--hare {
-      background-image: url("../img/photo-hare-desktop@1x.jpg");
-    }
-
-    &--bowl {
-      background-image: url("../img/photo-bowl-desktop@1x.jpg");
-    }
-
-    &--toys {
-      background-image: url("../img/photo-toys-desktop@1x.jpg");
-    }
-  }
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .catalog-good__wrapper {
@@ -72,6 +24,16 @@
   flex-direction: column;
   padding: 28px;
   padding-bottom: 26px;
+
+  &:hover {
+    box-shadow: 0 6px 10px $catalog-good-hover;
+    transition: box-shadow 0.6s;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $catalog-good-hover;
+    transition: box-shadow 0.6s;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -98,9 +60,24 @@
   font-size: 17px;
   line-height: 24px;
 
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.6s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.6s;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.catalog-good__title-link {
+  color: $basic-text-color;
+  text-decoration: none;
 }
 
 .catalog-good__text {
@@ -146,4 +123,16 @@
 
 .catalog-good__icon {
   opacity: 0.2;
+
+  &:hover {
+    fill: $features-item-bg;
+    opacity: 1;
+    transition: opacity 0.6s;
+  }
+
+  &:active {
+    fill: $features-item-bg;
+    opacity: 0.3;
+    transition: opacity 0.6s;
+  }
 }

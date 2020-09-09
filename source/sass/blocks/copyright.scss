@@ -14,3 +14,16 @@
   font-size: 19px;
   line-height: 18px;
 }
+
+.copyright__icon {
+  &:hover {
+    fill: $mail-link-hover;
+    transition: fill 0.6s;
+  }
+
+  &:active {
+    fill: $mail-link-hover;
+    opacity: 0.3;
+    transition: opacity 0.6s;
+  }
+}

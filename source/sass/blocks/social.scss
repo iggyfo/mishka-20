@@ -14,3 +14,16 @@
     margin-right: 0;
   }
 }
+
+.social__link {
+  &:hover {
+    fill: $mail-link-hover;
+    transition: fill 0.6s;
+  }
+
+  &:active {
+    fill: $mail-link-hover;
+    opacity: 0.3;
+    transition: opacity 0.6s;
+  }
+}
