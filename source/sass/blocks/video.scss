@@ -4,6 +4,16 @@
   margin: 0 30px 58px 33px;
   border: 1px solid $menu-bottom-color;
 
+  &:hover {
+    box-shadow: 0 6px 10px $catalog-good-hover;
+    transition: box-shadow 0.6s;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $catalog-good-hover;
+    transition: box-shadow 0.6s;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 50px 63px 50px;
     padding-bottom: 46px;
@@ -54,10 +64,7 @@
 
 .video__icon {
   margin-right: 25px;
-
-  path {
-    fill: $features-item-bg;
-  }
+  fill: $features-item-bg;
 
   @media (min-width: $desktop-width) {
     width: 15%;
@@ -78,24 +85,6 @@
   }
 
   background-image: url("../img/video-mobile@1x.jpg");
-
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 30%;
-    left: 32%;
-    min-width: 101px;
-    min-height: 77px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50px, -50px);
-    }
-  }
 
   @media (min-width: $tablet-width) {
     min-height: 455px;
@@ -118,6 +107,34 @@
     }
 
     background-image: url("../img/video-desktop@1x.jpg");
+  }
+}
+
+.video__icon-play {
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  min-width: 101px;
+  min-height: 77px;
+
+  &:hover {
+    min-width: 121px;
+    min-height: 92px;
+    transform: translate(-55px, -55px);
+  }
+
+  &:active {
+    min-width: 81px;
+    min-height: 62px;
+    opacity: 0.3;
+    transition: opacity 0.6s;
+    transform: translate(-45px, -45px);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50px);
   }
 }
 

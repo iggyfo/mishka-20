@@ -106,4 +106,16 @@
       margin-left: 115px;
     }
   }
+
+  &--modal {
+    width: 100%;
+    border-color: $features-item-bg;
+    color: $features-color;
+    background-color: $features-item-bg;
+
+    @media (min-width: $tablet-width) {
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
 }

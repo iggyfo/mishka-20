@@ -2,17 +2,17 @@
   display: none;
   width: 100vw;
   height: 100vh;
-  background-color: $features-color;
+  background-color: $modal-overlay;
+}
 
-  &--opend {
+.modal-cart {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+
+  &--opened {
     display: block;
-  }
-
-  &--page {
-    position: fixed;
-    z-index: 50;
-    left: 0;
-    top: 0;
   }
 }
 
