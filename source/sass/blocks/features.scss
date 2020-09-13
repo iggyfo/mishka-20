@@ -25,7 +25,9 @@
   background-color: $features-item-bg;
 
   &:hover {
+    margin-top: -5px;
     background-color: $left-feature-btn-hover;
+    transition: margin-top 0.6s;
 
     .features__icon {
       opacity: 0.7;
