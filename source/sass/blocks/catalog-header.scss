@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $main-header-bgcolor;
+  background-color: $footer-background;
 
   @media (min-width: $tablet-width) {
     min-height: 237px;
@@ -28,6 +28,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 255px;
+    border-top: 1px solid $menu-bottom-color;
   }
 }
 

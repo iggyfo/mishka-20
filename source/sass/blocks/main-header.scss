@@ -31,23 +31,29 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -10px;
-      left: 0;
-      height: 23px;
       width: 100%;
-      background: url("../img/bg-zigzag-fill.svg");
+      height: 24px;
+      bottom: -2px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
       background-size: contain;
+
+      @media (min-width: $desktop-width) {
+        background-size: cover;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
+    border-top: 1px solid $menu-bottom-color;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: 100% auto;
+      background-size: 80% auto;
 
       &::after {
         background-size: auto 37px;
-        background-position-x: 12px;
+        background-position-x: 32px;
         bottom: -5px;
       }
     }

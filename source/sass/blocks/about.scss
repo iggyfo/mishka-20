@@ -29,6 +29,8 @@
   @media (min-width: $desktop-width) {
     padding-top: 68px;
     padding-bottom: 70px;
+    width: 1150px;
+    margin: 0 auto;
 
     &::after {
       left: 50px;

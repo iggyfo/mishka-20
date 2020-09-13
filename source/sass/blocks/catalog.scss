@@ -9,8 +9,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 51px;
-    padding-top: 111px;
+    padding-top: 125px;
+    padding-left: 45px;
   }
 }

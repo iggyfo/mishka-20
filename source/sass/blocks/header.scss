@@ -14,6 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: 1px solid $menu-bottom-color;
+    width: 1050px;
+    margin: 0 auto;
+    border-bottom: none;
   }
 }

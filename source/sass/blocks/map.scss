@@ -32,6 +32,7 @@
     grid-column: 3 / -1;
     grid-row: 1 / 4;
     background-size: cover;
+    width: 526px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map-desktop@2x.jpg");
