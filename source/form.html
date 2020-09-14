@@ -181,52 +181,50 @@
             </div>
           </fieldset>
           <fieldset>
-            <div class="form__fieldset">
+            <div class="form__fieldset form__fieldset--name">
               <div class="form__legend-wrapper">
                 <div class="form__legend">ФИО</div>
                 <div class="form__legend-line"></div>
               </div>
               <div class="form__label-wrapper">
                 <div class="form__label-info">
-                  <label class="form__label form__label--info" for="name">Имя:</label>
+                  <label class="form__label" for="name">Имя:</label>
                   <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
                 </div>
                 <div class="form__label-info">
-                  <label class="form__label form__label--info" for="surname">Фамилия:</label>
+                  <label class="form__label" for="surname">Фамилия:</label>
                   <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
                 </div>
                 <div class="form__label-info">
-                  <label class="form__label form__label--info" for="patronymic">Отчество:</label>
+                  <label class="form__label" for="patronymic">Отчество:</label>
                   <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
                 </div>
               </div>
             </div>
           </fieldset>
-          <div class="form__fieldset-accent">
-            <div class="form__fieldset-wrapper">
-              <fieldset>
+          <fieldset>
+            <div class="form__fieldset-accent form__fieldset-accent--contacts">
+              <div class="form__fieldset-wrapper">
                 <div class="form__fieldset form__fieldset--contacts form__fieldset--tel">
                   <div class="form__legend-wrapper">
                     <div class="form__legend">Тел</div>
                     <div class="form__legend-line"></div>
-                  </div>
+                  </div> <!-- end .form__legend-wrapper-->
                   <div class="form__label-wrapper">
                     <div class="form__label-info">
                       <label class="visually-hidden" for="tel">Номер телефона</label>
-                      <input class="form__input" type="tel" id="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
+                      <input class="form__input" type="tel" id="tel" name="tel" placeholder="+7 XXX XXX XX XX*" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
                       <svg class="form__tel-icon" width="25px" height="24px">
                         <use xlink:href="#form-tel"></use>
                       </svg>
                     </div>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
+                  </div> <!-- end .form__label-wrapper-->
+                </div> <!-- end .form__fieldset-->
                 <div class="form__fieldset form__fieldset--contacts form__fieldset--email">
                   <div class="form__legend-wrapper">
                     <div class="form__legend">E-mail</div>
                     <div class="form__legend-line"></div>
-                  </div>
+                  </div> <!-- end .form__legend-wrapper-->
                   <div class="form__label-wrapper">
                     <div class="form__label-info">
                       <label class="visually-hidden" for="e-mail">E-mail</label>
@@ -234,12 +232,12 @@
                       <svg class="form__email-icon" width="32px" height="21px">
                         <use xlink:href="#form-email"></use>
                       </svg>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-            </div> <!-- end .form__fieldset-wrapper-->
-          </div>
+                    </div> <!-- end .form__label-info-->
+                  </div> <!-- end .form__label-wrapper-->
+                </div> <!-- end .form__fieldset-->
+              </div> <!-- end .form__fieldset-wrapper-->
+            </div> <!-- end .form__fieldset-accent-->
+          </fieldset>
           <fieldset>
             <div class="form__fieldset form__fieldset--textarea">
               <div class="form__legend-wrapper">
@@ -248,7 +246,7 @@
               </div>
               <div class="form__label-wrapper form__label-wrapper--textarea">
                 <label class="visually-hidden" for="addition">Доп</label>
-                <textarea class="form__textarea" id="addition" rows="5" cols="10" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="form__textarea" id="addition" rows="6" cols="10" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
               <p class="form__attention">*Поля обязательны для заполнения</p>
               <button class="button button--form" type="submit">Отправить заказ</button>
