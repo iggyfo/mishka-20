@@ -135,7 +135,7 @@
       border-left: 1px solid $menu-bottom-color;
       border-right: 1px solid $menu-bottom-color;
 
-      .nav__link--text {
+      .nav__link-text {
         display: none;
       }
     }
@@ -144,7 +144,7 @@
       width: 75.5%;
       justify-content: flex-end;
 
-      .nav__link--text {
+      .nav__link-text {
         padding-left: 24px;
       }
     }
@@ -248,7 +248,7 @@
   &:hover {
     opacity: 0.6;
 
-    .nav__link--icon {
+    .nav__link-icon {
       fill: $features-item-bg;
       opacity: 1;
       transition: opacity 0.6s;
@@ -258,7 +258,7 @@
   &:active {
     opacity: 0.3;
 
-    .nav__link--icon {
+    .nav__link-icon {
       fill: $features-item-bg;
       opacity: 0.3;
       transition: opacity 0.6s;
