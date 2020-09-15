@@ -299,29 +299,6 @@
       }
     }
   }
-
-  // &--info {
-  //   margin: 0;
-  //   margin-top: 22px;
-  //   padding: 0;
-  //   font-weight: bold;
-  //   font-size: 17px;
-  //   line-height: 18px;
-
-  //   @media (max-width: $mobile-only-width) {
-  //     &:first-of-type {
-  //       margin-top: 4px;
-  //     }
-  //   }
-
-  //   @media (min-width: $tablet-width) {
-  //     margin-top: 0;
-  //     padding-right: 23px;
-  //     height: 58px;
-  //     font-size: 19px;
-  //     line-height: 18px;
-  //   }
-  // }
 }
 
 .form__label-info {
@@ -407,14 +384,6 @@
       }
     }
 
-    // @media (min-width: $tablet-width) {
-    //   padding-right: 0;
-    // }
-
-    // @media (min-width: $desktop-width) {
-    //   height: 52px;
-    // }
-
     &:hover {
       &::before {
         border: 2px solid $email-link-border;
@@ -428,14 +397,17 @@
         transition: border 0.6s;
       }
     }
+
+    &:focus {
+      &::before {
+        outline: 10px solid aqua;
+      }
+    }
   }
 
   &--checkbox {
     height: 38px;
-
-    // @media (min-width: $tablet-width) {
-    //   height: 52px;
-    // }
+    padding-left: 80px;
 
     &::before {
       content: "";
@@ -450,7 +422,7 @@
 
       @media (min-width: $tablet-width) {
         left: -2px;
-        top: -13px;
+        top: -16px;
         width: 48px;
         height: 49px;
       }
@@ -472,6 +444,18 @@
   }
 }
 
+.form__radio:focus + .form__icon--radio {
+  &::before {
+    outline: 2px solid $email-link-border;
+  }
+}
+
+.form__checkbox:focus + .form__icon--checkbox {
+  &::before {
+    outline: 2px solid $email-link-border;
+  }
+}
+
 .form__radio:checked + .form__icon--radio {
   &::after {
     content: "";
@@ -480,9 +464,9 @@
     top: 4px;
     width: 12px;
     height: 12px;
-    border: 2px solid #62d1ba;
+    border: 2px solid $email-link-border;
     border-radius: 50%;
-    background-color: #62d1ba;
+    background-color: $email-link-border;
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -491,18 +475,6 @@
       top: 6px;
       width: 16px;
       height: 16px;
-    }
-  }
-
-  &:hover {
-    &::before {
-      // background-image: url("../img/icon-radio-on-mobile-hover.svg");
-    }
-  }
-
-  &:active {
-    &::before {
-      // background-image: url("../img/icon-radio-on-mobile-active.svg");
     }
   }
 }

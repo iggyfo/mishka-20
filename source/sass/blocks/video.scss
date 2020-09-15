@@ -1,7 +1,7 @@
 .video {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 30px 58px 33px;
+  margin: 0 30px 58px 30px;
   border: 1px solid $menu-bottom-color;
 
   &:hover {
@@ -24,7 +24,7 @@
     grid-template-columns: 65% 24%;
     column-gap: 79px;
     padding-bottom: 0;
-    width: 1050px;
+    width: 1045px;
     margin: 0 auto;
     margin-bottom: 110px;
   }
@@ -33,12 +33,14 @@
 .video__header {
   display: flex;
   align-items: center;
-  padding: 21px 30px 0 34px;
+  padding: 21px 30px 0 33px;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     order: 1;
     margin-bottom: 25px;
+    padding-top: 32px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,26 +61,35 @@
   font-size: 17px;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
     padding-right: 40%;
-    font-size: 20px;
+    padding-left: 0;
+    padding-top: 0;
   }
 }
 
 .video__icon {
   margin-right: 25px;
   fill: $features-item-bg;
+  width: 46px;
+  height: auto;
 
   @media (min-width: $desktop-width) {
-    width: 15%;
+    width: 29px;
     margin-right: auto;
   }
 }
 
 .video__wrapper {
   position: relative;
-  min-height: 150px;
+  height: 150px;
   background-color: $main-header-bgcolor;
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +102,7 @@
   background-image: url("../img/video-mobile@1x.jpg");
 
   @media (min-width: $tablet-width) {
-    min-height: 455px;
+    height: 455px;
     order: 0;
     margin-bottom: 0;
 
@@ -114,38 +125,58 @@
   }
 }
 
-.video__icon-play {
+.video__button {
   position: absolute;
-  top: 30%;
-  left: 32%;
+  border: none;
+  background-color: transparent;
+  top: 25%;
+  left: 27%;
   min-width: 101px;
   min-height: 77px;
 
+  @media (min-width: $tablet-width) {
+    width: 121px;
+    height: 74px;
+    top: 41%;
+    left: 41%;
+  }
+
   &:hover {
-    min-width: 121px;
-    min-height: 92px;
-    transform: translate(-55px, -55px);
+    top: 20%;
+    left: 24%;
+
+    @media (min-width: $tablet-width) {
+      top: 42%;
+      left: 41%;
+    }
+
+    .video__icon-play {
+      min-width: 121px;
+      min-height: 92px;
+    }
   }
 
   &:active {
-    min-width: 81px;
-    min-height: 62px;
-    opacity: 0.3;
-    transition: opacity 0.6s;
-    transform: translate(-45px, -45px);
-  }
+    top: 30%;
+    left: 30%;
 
-  @media (min-width: $tablet-width) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50px, -50px);
+    @media (min-width: $tablet-width) {
+      top: 43%;
+      left: 43%;
+    }
+
+    .video__icon-play {
+      min-width: 81px;
+      min-height: 62px;
+      opacity: 0.3;
+    }
   }
 }
 
 .video__description {
   margin: 0;
   margin-bottom: 41px;
-  padding: 0 30px 0 34px;
+  padding: 0 30px 0 33px;
   font-size: 13px;
   line-height: 24px;
   color: $good-text-color;
@@ -153,7 +184,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     width: 90%;
-    padding-left: 5%;
+    padding-left: 6%;
     font-size: 15px;
     line-height: 30px;
   }
@@ -163,6 +194,6 @@
     grid-row: 2 / 3;
     margin: 0;
     padding: 0;
-    padding-top: 8px;
+    padding-top: 11px;
   }
 }

@@ -22,8 +22,7 @@
 .catalog-good__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 28px;
-  padding-bottom: 26px;
+  padding: 26px;
 
   &:hover {
     box-shadow: 0 6px 10px $catalog-good-hover;
@@ -36,7 +35,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 42%;
+    padding-top: 26px;
     padding-bottom: 0;
   }
 
@@ -72,6 +72,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding-left: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -90,6 +95,11 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     padding-bottom: 0;
+    padding-left: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -98,11 +108,12 @@
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-top: 16px;
+  padding-top: 23px;
   border-top: 1px solid $menu-bottom-color;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 26px;
+    padding-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,8 +128,20 @@
   font-size: 15px;
   line-height: 24px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 17px;
+    line-height: 24px;
+    padding-left: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.catalog-good__link {
+  @media (min-width: $tablet-width) {
+    padding-right: 4px;
   }
 }
 

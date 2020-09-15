@@ -60,13 +60,14 @@
   }
 
   &--video {
-    padding: 18px 11px;
+    padding: 15px 11px;
     margin: 0 34px;
     margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
       order: 2;
       margin: 0 6%;
+      padding: 14px 11px;
     }
 
     @media (min-width: $desktop-width) {

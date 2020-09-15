@@ -78,12 +78,12 @@
           </a>
           <button class="nav__button" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="nav__button-open" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
+            <svg class="nav__button-open" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="19.958" height="14" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
               <rect fill="#231F20" width="19.958" height="2"/>
               <rect y="6" fill="#231F20" width="19.958" height="2"/>
               <rect y="12" fill="#231F20" width="19.958" height="2"/>
             </svg>
-            <svg class="nav__button-close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
+            <svg class="nav__button-close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="20.514" height="20.512" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
               <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
             </svg>
           </button>
@@ -104,7 +104,7 @@
           <ul class="nav__user">
             <li class="nav__item nav__item--menu nav__item--find">
               <a class="nav__link" href="#">
-                <svg class="nav__link-icon" width="17.6px" height="17.6px">
+                <svg class="nav__link-icon" width="17.6" height="17.6">
                   <use xlink:href="#loupe"></use>
                 </svg>
                 <span class="nav__link-text">Поиск по сайту</span>
@@ -112,7 +112,7 @@
             </li>
             <li class="nav__item nav__item--menu nav__item--cart">
               <a class="nav__link" href="#">
-                <svg class="nav__link-icon" width="20.294px" height="18.849px">
+                <svg class="nav__link-icon" width="20.294" height="18.849">
                   <use xlink:href="#cart"></use>
                 </svg>
                 <span class="nav__link-text">Корзина: пока пуста</span>
@@ -144,8 +144,8 @@
               </div>
               <div class="catalog-good__footer">
                 <p class="catalog-good__price">1 200&nbsp;руб.</p>
-                <a href="#" class="catalog-good__link">
-                  <svg class="catalog-good__icon" width="20.294px" height="18.849px">
+                <a href="#" class="catalog-good__link" aria-label="Заказать товар">
+                  <svg class="catalog-good__icon" width="20.294" height="18.849">
                     <use xlink:href="#cart"></use>
                   </svg>
                 </a>
@@ -169,8 +169,8 @@
               </div>
               <div class="catalog-good__footer">
                 <p class="catalog-good__price">690&nbsp;руб.</p>
-                <a href="#" class="catalog-good__link">
-                  <svg class="catalog-good__icon" width="20.294px" height="18.849px">
+                <a href="#" class="catalog-good__link" aria-label="Заказать товар">
+                  <svg class="catalog-good__icon" width="20.294" height="18.849">
                     <use xlink:href="#cart"></use>
                   </svg>
                 </a>
@@ -193,9 +193,9 @@
                 <p class="catalog-good__text">Диаметр 30&nbsp;см, высота&nbsp;30&nbsp;см</p>
               </div>
               <div class="catalog-good__footer">
-                <p class="catalog-good__price">1500&nbsp;руб.</p>
-                <a href="#" class="catalog-good__link">
-                  <svg class="catalog-good__icon" width="20.294px" height="18.849px">
+                <p class="catalog-good__price">1 500&nbsp;руб.</p>
+                <a href="#" class="catalog-good__link" aria-label="Заказать товар">
+                  <svg class="catalog-good__icon" width="20.294" height="18.849">
                     <use xlink:href="#cart"></use>
                   </svg>
                 </a>
@@ -205,25 +205,26 @@
         </div> <!-- end .catalog -->
         <div class="video">
           <div class="video__header">
-            <svg class="video__icon" width="32px" height="32px">
+            <svg class="video__icon" width="32" height="32">
               <use xlink:href="#video"></use>
             </svg>
             <h2 class="video__title">Процесc производства</h2>
           </div> <!-- end .video__header -->
           <div class="video__wrapper">
-            <!-- <video class="video__content" src="#"></video> -->
-            <svg class="video__icon-play" width="100.678px" height="76.891px">
-              <use xlink:href="#video-play"></use>
-            </svg>
+            <button class="video__button" type="button" aria-label="Просмотр видео">
+              <svg class="video__icon-play" width="100.678" height="76.891">
+                <use xlink:href="#video-play"></use>
+              </svg>
+            </button>
           </div>
-          <p class="video__description">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.</p>
+          <p class="video__description">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео&nbsp;о том, как появляются наши товары.</p>
           <a href="#" class="button button--video">Сделать заказ</a>
         </div> <!-- end .video -->
       </main>
       <footer class="footer">
         <div class="footer__wrapper">
           <a href="#" class="footer__logo">
-            <svg class="" width="101.615px" height="34.056px">
+            <svg class="" width="101.615" height="34.056">
               <use xlink:href="#footer-logo"></use>
             </svg>
           </a>
@@ -231,21 +232,21 @@
             <ul class="social">
               <li class="social__item">
                 <a href="#" class="social__link" aria-label="Instagram">
-                  <svg width="21.769px" height="21.334px">
+                  <svg width="21.769" height="21.334">
                     <use xlink:href="#footer-instagram"/>
                   </svg>
                 </a>
             </li>
               <li class="social__item">
                 <a href="#" class="social__link" aria-label="Facebook">
-                  <svg width="14.962px" height="27.718px">
+                  <svg width="14.962" height="27.718">
                     <use xlink:href="#footer-fb"/>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link" aria-label="Twitter">
-                  <svg width="23.494px" height="20.168px">
+                  <svg width="23.494" height="20.168">
                     <use xlink:href="#footer-twitter"/>
                   </svg>
                 </a>
