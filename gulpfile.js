@@ -13,6 +13,8 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlMinimizer = require("gulp-html-minimizer");
 const terser = require("gulp-terser");
+const ghPages = require('gh-pages');
+const path = require('path');
 
 // Styles
 
@@ -165,6 +167,11 @@ const scripts = () => {
 }
 
 exports.scripts = scripts;
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 //Build
 

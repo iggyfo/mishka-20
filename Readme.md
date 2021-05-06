@@ -7,4 +7,4 @@
 Использованы технологии:
 HTML, SCSS, Autoprefixer, JS (ES2015), Gulp.
 
-GH-pages: https://iggyfo.github.io/
+GH-pages: https://iggyfo.github.io/mishka-20/
